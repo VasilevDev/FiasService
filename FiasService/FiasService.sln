@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29001.49
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiasService", "FiasService.csproj", "{C83285CC-03BC-4F31-B464-E75D9FDB0C84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{DB9FEE65-660C-4B2F-BCCB-1E450E439B24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiasService.Data.Common", "..\Data\FiasService.Data.Common\FiasService.Data.Common.csproj", "{D8751930-3E43-4668-AFCE-2584C3BBBC8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FiasService.Data.Postgres", "..\Data\FiasService.Data.Postgres\FiasService.Data.Postgres.csproj", "{B7BF9F0E-4EAE-4740-91E1-9E5739F961E5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C83285CC-03BC-4F31-B464-E75D9FDB0C84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C83285CC-03BC-4F31-B464-E75D9FDB0C84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C83285CC-03BC-4F31-B464-E75D9FDB0C84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C83285CC-03BC-4F31-B464-E75D9FDB0C84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8751930-3E43-4668-AFCE-2584C3BBBC8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8751930-3E43-4668-AFCE-2584C3BBBC8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8751930-3E43-4668-AFCE-2584C3BBBC8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8751930-3E43-4668-AFCE-2584C3BBBC8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7BF9F0E-4EAE-4740-91E1-9E5739F961E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7BF9F0E-4EAE-4740-91E1-9E5739F961E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7BF9F0E-4EAE-4740-91E1-9E5739F961E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7BF9F0E-4EAE-4740-91E1-9E5739F961E5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D8751930-3E43-4668-AFCE-2584C3BBBC8D} = {DB9FEE65-660C-4B2F-BCCB-1E450E439B24}
+		{B7BF9F0E-4EAE-4740-91E1-9E5739F961E5} = {DB9FEE65-660C-4B2F-BCCB-1E450E439B24}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43327FA2-C823-47F1-9EEF-F922EFEF513E}
+	EndGlobalSection
+EndGlobal
