@@ -1,7 +1,9 @@
 ﻿using System;
 using FiasService.Data.Common;
 using FiasService.Data.Postgres;
+using FiasService.Database;
 using FiasService.Enums;
+using FiasService.Services;
 using FiasService.Settings;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -34,6 +36,9 @@ namespace FiasService
 		{
 			this.sp = services.BuildServiceProvider();
 			this.loggerFactory = this.sp.GetService<ILoggerFactory>();
+
+			services.AddSingleton<IDataStorageFactory>(fabric => new DataStorageFactory(DataStorageCreator));
+			services.AddScoped<IFiasXmlImport<object>, LocalDirectoryImport>();
 
 			services.AddMvc()
 				.SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
